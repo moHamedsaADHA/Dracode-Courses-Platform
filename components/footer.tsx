@@ -10,7 +10,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* Brand */}
           <div>
-            <h3 className="text-lg font-bold mb-4">MoSHa</h3>
+            <h3 className="text-lg font-bold mb-4">Dracode Warrior</h3>
             <p className="text-muted-foreground text-sm">Modern course platform for learning programming</p>
           </div>
 
@@ -99,7 +99,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-border pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-muted-foreground">
-          <p>&copy; 2025 MoSHa. All rights reserved.</p>
+          <p>&copy; 2025 Dracode Warrior. All rights reserved.</p>
           <div className="flex gap-6 mt-4 md:mt-0">
             <a href="#" className="hover:text-foreground transition-colors">
               Privacy Policy

@@ -8,7 +8,7 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "MoSHa - Dracode Course Platform",
+  title: "Dracode Warrior - Dracode Course Platform",
   description: "Learn programming from Mohamed Saad Hamed",
   generator: "v0.app",
 }

@@ -2,12 +2,19 @@
 
 import Link from "next/link"
 import { useState, useEffect } from "react"
+import { usePathname } from "next/navigation"
 import { Moon, Sun, Menu, X } from "lucide-react"
 
 export function Navigation() {
   const [isDark, setIsDark] = useState(false)
   const [mounted, setMounted] = useState(false)
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const pathname = usePathname() || "/"
+
+  const isActive = (path: string) => {
+    if (path === "/") return pathname === "/"
+    return pathname.startsWith(path)
+  }
 
   useEffect(() => {
     setMounted(true)
@@ -30,22 +37,34 @@ export function Navigation() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group">
             <div className="text-2xl font-bold bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
-              MoSHa
+              Dracode Warrior
             </div>
           </Link>
 
           {/* Navigation Links - Desktop */}
           <div className="hidden md:flex items-center gap-8">
-            <Link href="/" className="text-foreground hover:text-primary transition-colors">
+            <Link
+              href="/"
+              className={`text-foreground hover:text-primary transition-colors ${isActive("/") ? "border-b-2 border-primary pb-1" : ""}`}
+            >
               Home
             </Link>
-            <Link href="/for-free" className="text-foreground hover:text-primary transition-colors">
+            <Link
+              href="/for-free"
+              className={`text-foreground hover:text-primary transition-colors ${isActive("/for-free") ? "border-b-2 border-primary pb-1" : ""}`}
+            >
               For Free
             </Link>
-            <Link href="/baument" className="text-foreground hover:text-primary transition-colors">
+            <Link
+              href="/baument"
+              className={`text-foreground hover:text-primary transition-colors ${isActive("/baument") ? "border-b-2 border-primary pb-1" : ""}`}
+            >
               Baument
             </Link>
-            <Link href="/private" className="text-foreground hover:text-primary transition-colors">
+            <Link
+              href="/private"
+              className={`text-foreground hover:text-primary transition-colors ${isActive("/private") ? "border-b-2 border-primary pb-1" : ""}`}
+            >
               Private
             </Link>
           </div>
@@ -77,28 +96,28 @@ export function Navigation() {
           <div className="md:hidden pb-4 space-y-2 animate-in fade-in slide-in-from-top-2 duration-200">
             <Link
               href="/"
-              className="block px-4 py-2 text-foreground hover:bg-muted rounded-lg transition-colors"
+              className={`block px-4 py-2 text-foreground hover:bg-muted rounded-lg transition-colors ${isActive("/") ? "border-b-2 border-primary" : ""}`}
               onClick={() => setIsMenuOpen(false)}
             >
               Home
             </Link>
             <Link
               href="/for-free"
-              className="block px-4 py-2 text-foreground hover:bg-muted rounded-lg transition-colors"
+              className={`block px-4 py-2 text-foreground hover:bg-muted rounded-lg transition-colors ${isActive("/for-free") ? "border-b-2 border-primary" : ""}`}
               onClick={() => setIsMenuOpen(false)}
             >
               For Free
             </Link>
             <Link
               href="/baument"
-              className="block px-4 py-2 text-foreground hover:bg-muted rounded-lg transition-colors"
+              className={`block px-4 py-2 text-foreground hover:bg-muted rounded-lg transition-colors ${isActive("/baument") ? "border-b-2 border-primary" : ""}`}
               onClick={() => setIsMenuOpen(false)}
             >
               Baument
             </Link>
             <Link
               href="/private"
-              className="block px-4 py-2 text-foreground hover:bg-muted rounded-lg transition-colors"
+              className={`block px-4 py-2 text-foreground hover:bg-muted rounded-lg transition-colors ${isActive("/private") ? "border-b-2 border-primary" : ""}`}
               onClick={() => setIsMenuOpen(false)}
             >
               Private

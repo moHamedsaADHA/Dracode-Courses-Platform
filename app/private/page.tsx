@@ -31,14 +31,14 @@ export default function PrivatePage() {
                 <div className="space-y-4 text-sm text-muted-foreground">
                   <div>
                     <p className="font-semibold text-foreground mb-1">Email</p>
-                    <a href="mailto:hello@mosha.dev" className="hover:text-primary transition-colors">
-                      hello@mosha.dev
+                    <a href="mailto:mohamed.saad2827822772@gmail.com" className="hover:text-primary transition-colors">
+                      mohamed.saad2827822772@gmail.com
                     </a>
                   </div>
                   <div>
                     <p className="font-semibold text-foreground mb-1">Phone</p>
-                    <a href="tel:+1234567890" className="hover:text-primary transition-colors">
-                      +1 (234) 567-890
+                    <a href="tel:+201092731005" className="hover:text-primary transition-colors">
+                      +201092731005
                     </a>
                   </div>
                   <div>
@@ -66,7 +66,7 @@ export default function PrivatePage() {
                     </a>
                   </li>
                   <li>
-                    <a href="/baument" className="text-muted-foreground hover:text-primary transition-colors">
+                    <a href="/Premium" className="text-muted-foreground hover:text-primary transition-colors">
                       Premium Courses
                     </a>
                   </li>

@@ -32,7 +32,7 @@ export function AnimatedLogo() {
             </div>
           ) : (
             <div className="text-5xl sm:text-6xl font-bold bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
-              MoSHa
+                Dracode Warrior
             </div>
           )}
         </div>

@@ -2,9 +2,11 @@
 
 import type React from "react"
 import { useEffect, useState } from "react"
+import { usePathname } from "next/navigation"
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
   const [mounted, setMounted] = useState(false)
+  const pathname = usePathname() || "/"
 
   useEffect(() => {
     setMounted(true)
@@ -22,9 +24,15 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
     }
   }, [])
 
+  // While hydrating, render children as-is to avoid flicker
   if (!mounted) {
     return <>{children}</>
   }
 
-  return <>{children}</>
+  // Key by pathname so route changes remount this container and trigger the CSS animation
+  return (
+    <div key={pathname} className="min-h-screen animate-in fade-in slide-in-from-bottom-2 duration-300">
+      {children}
+    </div>
+  )
 }
