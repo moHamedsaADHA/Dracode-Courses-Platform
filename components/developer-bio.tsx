@@ -59,7 +59,7 @@ export function DeveloperBio() {
             </svg>
           </a>
           <a
-            href="#"
+            href="mailto:mohamed.saad2827822772@gmail.com"
             className="p-3 bg-muted rounded-lg hover:bg-primary hover:text-primary-foreground transition-all duration-300 transform hover:scale-110"
             aria-label="Email"
           >
@@ -70,7 +70,7 @@ export function DeveloperBio() {
         {/* Stats */}
         <div className="grid grid-cols-3 gap-4 pt-8 border-t border-border">
           <div className="text-center">
-            <p className="text-2xl font-bold text-primary">500+</p>
+            <p className="text-2xl font-bold text-primary">800+</p>
             <p className="text-sm text-muted-foreground">Students</p>
           </div>
           <div className="text-center">
@@ -78,7 +78,7 @@ export function DeveloperBio() {
             <p className="text-sm text-muted-foreground">Courses</p>
           </div>
           <div className="text-center">
-            <p className="text-2xl font-bold text-primary">10+</p>
+            <p className="text-2xl font-bold text-primary">+2</p>
             <p className="text-sm text-muted-foreground">Years Experience</p>
           </div>
         </div>
