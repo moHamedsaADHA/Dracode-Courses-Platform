@@ -66,7 +66,7 @@ export default function PrivatePage() {
                     </a>
                   </li>
                   <li>
-                    <a href="/Premium" className="text-muted-foreground hover:text-primary transition-colors">
+                    <a href="/premium" className="text-muted-foreground hover:text-primary transition-colors">
                       Premium Courses
                     </a>
                   </li>
