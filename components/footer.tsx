@@ -29,7 +29,7 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/baument" className="text-muted-foreground hover:text-foreground transition-colors">
+                <Link href="/Premium" className="text-muted-foreground hover:text-foreground transition-colors">
                   Paid Courses
                 </Link>
               </li>

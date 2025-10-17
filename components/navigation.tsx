@@ -56,10 +56,10 @@ export function Navigation() {
               For Free
             </Link>
             <Link
-              href="/baument"
-              className={`text-foreground hover:text-primary transition-colors ${isActive("/baument") ? "border-b-2 border-primary pb-1" : ""}`}
+              href="/premium"
+              className={`text-foreground hover:text-primary transition-colors ${isActive("/premium") ? "border-b-2 border-primary pb-1" : ""}`}
             >
-              Baument
+              Premium
             </Link>
             <Link
               href="/private"
@@ -109,11 +109,11 @@ export function Navigation() {
               For Free
             </Link>
             <Link
-              href="/baument"
-              className={`block px-4 py-2 text-foreground hover:bg-muted rounded-lg transition-colors ${isActive("/baument") ? "border-b-2 border-primary" : ""}`}
+              href="/premium"
+              className={`block px-4 py-2 text-foreground hover:bg-muted rounded-lg transition-colors ${isActive("/premium") ? "border-b-2 border-primary" : ""}`}
               onClick={() => setIsMenuOpen(false)}
             >
-              Baument
+              Premium
             </Link>
             <Link
               href="/private"

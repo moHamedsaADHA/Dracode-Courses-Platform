@@ -30,15 +30,15 @@ const quotes: MotivationalQuote[] = [
 
 const quranicVerses: QuranicVerse[] = [
   {
-    text: "Read! In the name of your Lord who created.",
+    text: "اقْرَأْ بِاسْمِ رَبِّكَ الَّذِي خَلَقَ",
     reference: "Quran 96:1",
   },
   {
-    text: "And say: My Lord! Increase me in knowledge.",
+    text: "وَقُل رَّبِّ زِدْنِي عِلْمًا",
     reference: "Quran 20:114",
   },
   {
-    text: "Those who have knowledge and those who do not are not equal.",
+    text: "قُلْ هَلْ يَسْتَوِي الَّذِينَ يَعْلَمُونَ وَالَّذِينَ لَا يَعْلَمُونَ",
     reference: "Quran 39:9",
   },
 ]
